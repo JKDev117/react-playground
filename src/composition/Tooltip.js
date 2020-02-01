@@ -1,6 +1,9 @@
+//14.7 Default Props & Class Components
+
 import React from 'react';
 import './Tooltip.css';
 
+//functional component
 function Tooltip(props){
     return (
         <span className="Tooltip">
@@ -15,11 +18,13 @@ function Tooltip(props){
 }
 
 
+
+//class component
 class TooltipClass extends React.Component {
     static defaultProps = {
         color: '#01A800', //green
     };
-    render() {
+    render() { //render is the only method required for React class components; the render method is similar to the function components
         console.log('Using a class component!')
         console.log(this.props)
         return (

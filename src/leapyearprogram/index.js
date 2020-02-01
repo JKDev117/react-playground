@@ -1,3 +1,6 @@
+// 14.8 Intro to Testing
+
+//functional component
 function leapYear(year) {
     if(year < 1582) {
       throw new Error('Leap year rules do not work before 1582');
