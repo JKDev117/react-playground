@@ -1,15 +1,24 @@
 .App {
     display: flex;
+    flex-direction: column;
     margin: 40px;
     min-height: calc(70vh);
   }
-  
-  .left {
-    background-color: darkslategray;
-    color: azure;
-  }
-  
-  .right {
-    background-color: wheat;
-    color: firebrick;
-  }
+
+.App > div {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.left {
+  background-color: darkslategray;
+  color: azure;
+}
+
+.right {
+  background-color: wheat;
+  color: firebrick;
+}
+
+
