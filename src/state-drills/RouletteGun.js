@@ -20,21 +20,25 @@ class RouletteGun extends React.Component {
     }
 
     componentWillUnmount(){
-        clearTimeout(this.state.timeoutID)
+        clearTimeout(this.state.timeoutID) //The clearTimeout() method clears a timer set with the setTimeout() method. The ID value returned by setTimeout() is used as the parameter for the clearTimeout() method.
     }
 
     handleClickButton = () => {
         this.setState({spinningTheChamber: true});
-        let timeoutID = setTimeout(() => {
+        // The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+        let timeoutID = setTimeout(() => { 
                 this.setState({chamber: Math.ceil(Math.random()*8), spinningTheChamber: false})
             }
             ,2000);
+        console.log('let timeoutID = ',timeoutID); //=> 7,8,9,10,...
         this.setState({timeout: timeoutID});
+        console.log('state.timeout: ',this.state.timout) //=> undefined
     }
 
+
     render(){
-        console.log(this.props.bulletInChamber)
-        console.log(this.state.chamber)
+        console.log('props.bulletInChamber = ', this.props.bulletInChamber) //=> props.bulletInChamber = 8
+        console.log('state.chamber: ', this.state.chamber) //=> 'null' at first, but then can be a random number (e.g. '7') after 'handleClickButton' runs. 
         if(this.state.spinningTheChamber===true){
             return <div>
                 <p>spinning the chamber and pulling the trigger! ....</p>
@@ -51,7 +55,7 @@ class RouletteGun extends React.Component {
             </div>;            
         }        
     }
-
+    
 }
 
 
