@@ -7,7 +7,7 @@ import TheDate from './state/TheDate';
 import Counter from './state/Counter';
 import Tabs from './state/Tabs';
 import Accordion from './state-drills/Accordion';
-
+import DemonymApp from './demonymapp/demonymApp'; //14.13 API Requests
 
 // 14.7 Default Props & Class Components
 //make 2 tooltips here and another inside the App directly
@@ -60,7 +60,7 @@ const sectionsProp = [
 function App() {
   return (
     <main className='App'>
-      <div>
+      <div className="Row-1">
             {/* 14.6 Component Composition */}
             <Split className='left' flexBasis='2'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ex velit suscipit facere officia?
@@ -81,7 +81,7 @@ function App() {
             <Messages name="Notifications" unread={10}/>
       </div>
 
-      <div>
+      <div className="Row-2">
             {/* 14.9 Setting, Reading, and Updating State */}
             <TheDate />
             <Counter count={123} step={3}/> 
@@ -93,7 +93,10 @@ function App() {
             <Accordion sections={sectionsProp} />
 
       </div>
-
+      <div className="Row-3">
+            {/* 14.13 API Requests */}
+            <DemonymApp />
+      </div>  
 
     </main>
   )
