@@ -7,13 +7,17 @@ import HelloWorld from './state-drills/HelloWorld';
 import Bomb from './state-drills/Bomb';
 import RouletteGun from './state-drills/RouletteGun.js';
 import { BrowserRouter } from 'react-router-dom';
+import AppLang from './lang-context/AppLang';
 
 
 ReactDOM.render (
         <div>
+            <AppLang />
+            {/* //14.14; commented out for 14.15
             <BrowserRouter>
                 <App />
             </BrowserRouter>
+            */}
             {/* //commented out for 14.14
             <div className = "state-drills"> 
                 <HelloWorld />
