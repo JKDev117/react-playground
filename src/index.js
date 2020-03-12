@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './playingwithdanger/App'; //14.14
-import App from './App'; //comment this out for 14.14
-//import App from './paltrows-power-toes/App'; //comment this out for 14.17
+//import App from './playingwithdanger/App'; //14.17
+import App from './App'; //comment this out for 14.14 & above
+//import App from './paltrows-power-toes/App'; //14.14 //comment this out for 14.17
 import './index.css';
 import HelloWorld from './state-drills/HelloWorld';
 import Bomb from './state-drills/Bomb';
