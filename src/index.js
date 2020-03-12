@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './playingwithdanger/App'; //14.14
-//import App from './App'; //comment this out for 14.14
+import App from './playingwithdanger/App'; //14.17
+//import App from './App'; //comment this out for 14.14 & above
 //import App from './paltrows-power-toes/App'; //14.14 //comment this out for 14.15 & above
 import './index.css';
 import HelloWorld from './state-drills/HelloWorld';
@@ -14,17 +14,15 @@ import RegistrationForm from './registrationForm/registrationForm'; //14.17
 
 ReactDOM.render (
         <>
-            
-            {/* 14.17 
+            {/* 14.17 */}
             <App /> 
-            */}
 
-            {/* 14.17
+            {/* 14.17  */}
             <RegistrationForm />    
-            */}
+           
 
             {/* 14.15 //Comment this out for 14.17 */}
-            <AppLang />
+            {/* <AppLang /> */}
 
             {/* //14.14 
             <BrowserRouter>
