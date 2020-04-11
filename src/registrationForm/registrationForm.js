@@ -1,6 +1,7 @@
 //14.17 Organizing Your React Code
 import React from 'react';
 import ValidationError from './ValidationError';
+import './registrationForm.css';
 
 class RegistrationForm extends React.Component {
     constructor(props){

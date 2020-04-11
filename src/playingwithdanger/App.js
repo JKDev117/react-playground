@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 import Currency from './Currency';
 import CurrencyError from './CurrencyError';
-
+import './App.css';
 
 class App extends Component {
     render() {
