@@ -51,7 +51,7 @@ const sectionsProp = [
     content: 'Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?',
   },
 ]
-// e.g. <Accordion sections={sections} />
+// e.g. <Accordion sections={sectionsProp} />
 
 
 /* Notes: */

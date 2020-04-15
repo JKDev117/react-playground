@@ -17,10 +17,21 @@ function Tooltip(props){
     )
 }
 
+/* p. 7
+One difference between render() and a function Component() is how props work. 
+In a function component, props are a parameter, as we've seen. 
+In a class, however, props aren't a parameter anymore, we need to access props using this.props.
+*/
 
 
 //class component
 class TooltipClass extends React.Component {
+    /*
+    The defaultProp will be used if no equivalent prop is supplied.
+    The rule for making default props is to create a defaultProps property for the class with 'static defaultProps' 
+    and then assign an object to that property. The keys of that object are the props you want to have defaults 
+    for and the values are the default values you want to assign.
+    */
     static defaultProps = {
         color: '#01A800', //green
     };
